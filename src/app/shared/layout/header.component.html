@@ -1,0 +1,40 @@
+
+<header>
+
+  <div class="head-cntnr">
+
+    <mat-toolbar>
+
+      <mat-toolbar-row>
+
+          <!-- Head Icon -->
+          <div class="head-img-wrp">
+            <a routerLink="/">
+              <i class="material-icons world">public</i>
+            </a>
+          </div>
+  
+          <!-- Search Bar -->
+          <div class="head-srch-wrp">
+            <div class="head-icn">
+              <i class="material-icons search-icn">search</i>
+            </div><input class="head-inpt" placeholder="Search ..." (keyup)="inputChange()" />
+            <bv-search [display]="display"></bv-search>
+          </div>
+  
+          <!-- Flex Spacer -->
+          <span class="spacer"></span>
+          
+          <!-- Desktop menu -->
+          <div class="head-rght desktop">
+            <span><button class="head-btn" mat-button><i class="material-icons">person</i>&nbsp;Sign In</button></span>
+            <span><button class="head-btn" mat-raised-button color="accent"><i class="material-icons">add_circle</i>&nbsp;Sign Up</button></span>
+          </div>
+
+        </mat-toolbar-row>
+
+      </mat-toolbar>
+
+    </div>
+
+</header>

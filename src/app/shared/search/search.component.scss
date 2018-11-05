@@ -1,0 +1,33 @@
+
+.search-container {
+  position: absolute;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+  left: 0;
+  top: 45px;
+  background-color: #ffffff;
+}
+
+%tooltip-arrow {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border: 10px solid transparent;
+}
+
+.search-container:before,
+.search-container:after {
+  @extend %tooltip-arrow;
+  top: -9px;
+  left: 30px;
+  border-top: 0;
+  border-bottom-color: #ffffff;
+}
+.search-container:before {
+  top: -11px;
+  border-bottom-color: #dddddd;
+}
